@@ -1,12 +1,16 @@
+proxID = 3
 produtos = [
-    [001, "Martelo", 100, "M-01-01"],
-    [002, "Chave de Fenda", 150, "C-01-01"],
-    [003, "Chave Philips", 200, "C-01-02"]
+    [1, "Martelo", 100, "M-01-01"],
+    [2, "Chave de Fenda", 150, "C-01-01"],
+    [3, "Chave Philips", 200, "C-01-02"]
     ]
-
 def adicionarprodutos():
-    novoProduto = input("Adicione os dados do novo produto: ") 
-    produtos.append(novoProduto) 
+    global proxID
+    novoProduto = input("Adicione o nome do novo produto: ")
+    localizacao = input("Qual a localização do produto?: ")
+    quantidade = input("Digite a quantidade do produto: ")
+    proxID = proxID + 1
+    produtos.append([proxID, novoProduto, quantidade, localizacao])
     print("Produto inserido com sucesso! 📦")
 
 def listar_produtos():
@@ -14,10 +18,14 @@ def listar_produtos():
         print(f"Os produtos disponíveis são: {lista}")
 
 def busca_ID():
-    for ID in produtos:
-        print(f"Os IDs dos produtos são: {ID}")
-    
-
+    produtoProcurado = input("Insira o ID do produto: ")
+    for i in range(len(produtos)):
+        if (produtos[i][0] == produtoProcurado):
+            print(f"O produto procurado é: {produtos[i][1]}, {produtos[i][2]}, {produtos[i][3]}")
+    else:
+        print("Produto não encontrado!")
+           
+       
 print("\n------- Sistema de Controle de Estoque Simplificado (SCES) -------")
 
 while True:       
