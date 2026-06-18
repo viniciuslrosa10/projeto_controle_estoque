@@ -1,9 +1,9 @@
 proxID = 3
 
 produtos = [
-    ["1", "Martelo", 100, "M-01-01"],
-    ["2", "Chave de Fenda", 150, "C-01-01"],
-    ["3", "Chave Philips", 200, "C-01-02"]
+    ["1", "Martelo", 10, "M-01-01"],
+    ["2", "Chave de Fenda", 15, "C-01-01"],
+    ["3", "Chave Philips", 20, "C-01-02"]
     ]
 
 def adicionarprodutos(): ##Criei essa função para adicionar novos produtos no estoque
@@ -46,10 +46,10 @@ def atualizar_Estoque(): ##Essa função funciona para o usuário atualizar a qu
 def estoque_Mínimo(): ##ESsa função serve para avisar ao gerente que quando uma peça está com estoque mínimo é enviado uma mensagem de alerta
     for linha in produtos:
         if linha[2] < 5:
-            print(f"Alerta! A {linha} está com baixa quantidade {linha[2]}")
-            break
-        else:
-            print("Prossiga!")
+            print(f"Alerta! {linha} está em baixa quantidade: {linha[2]}")
+            
+    else:
+        print("Prossiga!")
             
     
                 
