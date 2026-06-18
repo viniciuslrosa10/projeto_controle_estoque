@@ -13,7 +13,7 @@ def listar_produtos():
     for lista in produtos:
         print(f"Os produtos disponíveis são: {lista}")
 
-def busca_produtos():
+
 
         
 
@@ -26,9 +26,9 @@ while True:
     if (opcao == "1"):
         adicionarprodutos()
     elif (opcao == "2"):
-        viajar()
+        
     elif (opcao == "3"):
-        abastecer()
+       
     elif (opcao == "4"):
         adicionarprodutos()
     elif (opcao == "5"):
