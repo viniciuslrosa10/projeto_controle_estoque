@@ -1,8 +1,8 @@
 proxID = 3
 produtos = [
-    [1, "Martelo", 100, "M-01-01"],
-    [2, "Chave de Fenda", 150, "C-01-01"],
-    [3, "Chave Philips", 200, "C-01-02"]
+    ["1", "Martelo", 100, "M-01-01"],
+    ["2", "Chave de Fenda", 150, "C-01-01"],
+    ["3", "Chave Philips", 200, "C-01-02"]
     ]
 def adicionarprodutos():
     global proxID
@@ -19,9 +19,10 @@ def listar_produtos():
 
 def busca_ID():
     produtoProcurado = input("Insira o ID do produto: ")
-    for i in range(len(produtos)):
-        if (produtos[i][0] == produtoProcurado):
-            print(f"O produto procurado é: {produtos[i][1]}, {produtos[i][2]}, {produtos[i][3]}")
+    for linha in produtos:
+            if produtoProcurado == linha[0]:
+                print(f"Produto encontrado: {linha}")
+                break
     else:
         print("Produto não encontrado!")
            
