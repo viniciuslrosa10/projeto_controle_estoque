@@ -1,5 +1,5 @@
 # **Projeto do Sistema de Controle de Estoque Simplificado (SCES)**
 ## **Controle de saída e entrada de almoxarifado**
 
-### É um sistema simplificado de controle de estoque de peças. O código foi criado para facilitar a organização de um armazenamento de indústrias, lojas e comércios. Nele, os produtos estão organizados em: ID, Nome do produto, Quantidade e Localização. 
-### Como forma de organização, funções como: adicionar produtos, listar produtos, buscar por ID, atualizar estoque e estoque minímo, que funcionam para melhor funcionamento do usuário. Quando iniciado o código, é mostrado um menu interativo onde o usuário escolhe entre 6 opções, otimizando o sistema de controle e organização do estoque. 
+  É um sistema simplificado de controle de estoque de peças. O código foi criado para facilitar a organização de um armazenamento de indústrias, lojas e comércios. Nele, os produtos estão organizados em: ID, Nome do produto, Quantidade e Localização. 
+  Como forma de organização, funções como: adicionar produtos, listar produtos, buscar por ID, atualizar estoque e estoque minímo, que funcionam para melhor funcionamento do usuário. Quando iniciado o código, é mostrado um menu interativo onde o usuário escolhe entre 6 opções, otimizando o sistema de controle e organização do estoque. 
