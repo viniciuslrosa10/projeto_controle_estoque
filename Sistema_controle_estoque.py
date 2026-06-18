@@ -25,6 +25,16 @@ def busca_ID():
                 break
     else:
         print("Produto não encontrado!")
+
+def atualizar_Estoque():
+    produtoProcurado = input("Insira o ID do produto: ")
+    for linha in produtos:
+        if produtoProcurado == linha[0]:
+            atualizar = input("Qual a quantidade desejada?: ")
+            linha[2] = atualizar
+            print(f"Quantidade alterada: {linha}")
+            break
+                
            
        
 print("\n------- Sistema de Controle de Estoque Simplificado (SCES) -------")
@@ -41,7 +51,7 @@ while True:
         busca_ID()
        
     elif (opcao == "4"):
-        adicionarprodutos()
+        atualizar_Estoque()
     elif (opcao == "5"):
         print("Saída do Estoque!")
         break
