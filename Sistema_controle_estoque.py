@@ -58,7 +58,7 @@ def estoque_Mínimo(): ##ESsa função serve para avisar ao gerente que quando u
 print("\n------- Sistema de Controle de Estoque Simplificado (SCES) -------")
 
 while True:       
-    print("\n1- Adicionar novo produto | 2- Listar todos os produtos | 3- Buscar produto por ID | 4- Atualizar estoque | 5- Verificar estoque mínimo | 6- Sair")
+    print("\n1- Adicionar novo produto 📦 | 2- Listar todos os produtos 📝 | 3- Buscar produto por ID 👨‍💻 | 4- Atualizar estoque 🛞 | 5- Verificar estoque mínimo 📦 | 6- Sair")
     opcao = input("Escolha: ")
     if (opcao == "1"):
         adicionarprodutos()
